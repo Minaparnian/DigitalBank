@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
 html, body {
     overflow: auto;
 }
@@ -10,13 +13,22 @@ body {
   background: url(../img/blue-pink.png) center center no-repeat;
 }
 
-h1 {
+h2 {
   color: white;
-  font-size: 50px
+  font-size: 4.5rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+
 }
 
 p {
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.45;
+  font-weight: 300;
+  font-size: 1.75rem;
+
 }
 
 
@@ -52,17 +64,22 @@ button {
   background-color: #e41a70;
   border: 2px solid #e41a70;
   color: white;
-  width: 20%;
+  width: 51%;
   margin: 0 auto;
+  height: 35px;
+
 
 }
 
 
 input {
   display: block;
-  color: white;
-  width: 20%;
+  color: #e41a70;
+  font-size: 20px;
+  width: 50%;
   margin-bottom: 10px;
+  height: 30px;
+  border-radius: 5px;
 
 
 }
@@ -95,6 +112,9 @@ input {
 
 
 
+
+
+
 @media all and (min-width: 800px) {
 .mobile    { flex: 3 0px; }
   .mobile { order: 1; }
@@ -103,10 +123,6 @@ input {
 
 }
 
-/*If its bigger than 600px*/
-@media all and (min-width: 600px) {
-  .text { flex: 1 auto; }
-}
 
 @media all and (max-width: 1200px) {
   .ifram-container iframe {
@@ -120,6 +136,7 @@ input {
       width: 100%;
       height: 100%;
   }
+
 
 
 }
@@ -138,6 +155,7 @@ input {
     display: flex;
     flex-flow: row wrap;
     text-align: center;
+    padding: 0;
 
   }
 
@@ -152,7 +170,7 @@ input {
       background-color: #e41a70;
       border: 1px solid #e41a70;
       color: white;
-      width: 30%;
+      width: 40%;
       margin-top: 8px;
 
     }
@@ -161,14 +179,33 @@ input {
     input {
       display: block;
       color: white;
-      width: 30%;
+      width: 40%;
       margin-bottom: 10px;
       box-sizing: border-box;
       margin: 0 auto;
     }
 
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-weight: 200;
+      font-size: 1rem;
+    }
+
 
   }
 
+
+
+
+
+/*If its bigger than 600px*/
+@media all and (min-width: 600px) {
+  .text {
+     flex: 1 auto;
+   }
 
 }
