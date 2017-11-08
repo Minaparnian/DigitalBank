@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-
-html, body {
+/*html, body {
     overflow: auto;
 }
 
 html{
   height: 100%;
-}
+}*/
 body {
-  min-height: 100%;
+  height: 100%;
   background: url(../img/blue-pink.png) center center no-repeat;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
 }
 
 h2 {
   color: white;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-family: 'Montserrat', sans-serif;
   line-height: 1;
   font-weight: 400;
@@ -26,9 +27,14 @@ p {
   color: white;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.45;
-  font-weight: 300;
-  font-size: 1.75rem;
+  /*font-weight: 300;*/
+  font-size: 1.15rem;
 
+}
+
+.section-1 {
+  height: 100%;
+  min-height: 1000px;
 }
 
 
@@ -53,13 +59,14 @@ p {
 .text {
   box-sizing: border-box;
   flex-basis:60%;
+  /* Flex-grow is like to grow the width 1 or 2 times of the actual width */
   flex-grow: 1;
-  padding: 0 60px;
+  padding: 40px 60px;
   margin-bottom: 90px;
 }
 .limit-text{
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 710px;
+  margin: 10px auto;
 }
 
 button {
@@ -93,16 +100,19 @@ input {
     margin: 0 auto;
     margin-top: 80px;
 }
-.container .ifram-container {
+.container .iframe-container {
       position: relative;
       padding-top: 25px;
       display: flex;
       justify-content: space-around;
 }
-.ifram-container iframe {
+
+
+.iframe-container iframe {
 
     box-sizing: border-box;
     background: url(../img/Phoneframe.png) no-repeat;
+
     background-size: contain;
     padding: 52px 14px;
     width: 223px;
@@ -111,6 +121,72 @@ input {
     display: inline-block;
 }
 
+
+
+/*-----------------------------------------------Nav---------------------------------------------------- */
+
+.empty {
+  height: 10px;
+  width: 100%;
+  background: #79217c;
+
+}
+
+
+.navigation {
+  list-style: none;
+  /*margin: 0;*/
+  /*height: 80px;*/
+
+
+  background: white;
+
+/*change list direction from block to inline*/
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;*/
+
+  /*define the flex container's main and cross axes*/
+  -webkit-flex-flow: row wrap;
+  /*Push all the list on the right*/
+  justify-content: flex-start;
+  background-attachment: fixed;
+  overflow: hidden;
+
+}
+
+li.left {
+  margin-right: auto;
+
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #e41a70;
+  /*height: 80px;*/
+  cursor: pointer;
+  box-sizing: border-box;
+
+}
+
+.navigation .right:hover {
+  background: #79217c;
+  cursor: pointer;
+
+}
+
+li.right {
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+
+
+
+/*----------------------------------------------@media query---------------------------------------------------- */
 
 @media all and (max-width: 950px) {
 
@@ -125,35 +201,94 @@ input {
   }
 
 
-    button {
-
-      background-color: #e41a70;
-      border: 1px solid #e41a70;
-      color: white;
-      width: 40%;
-      margin-top: 8px;
-
-    }
 
 
-    input {
-      display: block;
-      color: white;
-      width: 40%;
-      margin-bottom: 10px;
-      box-sizing: border-box;
-      margin: 0 auto;
-    }
+      button {
 
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 500;
-    }
+        background-color: #e41a70;
+        border: 1px solid #e41a70;
+        color: white;
+        width: 40%;
+        margin-top: 8px;
 
-    p {
-      font-weight: 200;
-      font-size: 1rem;
-    }
+      }
 
+
+      input {
+        display: block;
+        color: white;
+        width: 40%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+      }
+
+      p {
+        font-weight: 200;
+        font-size: 1rem;
+      }
+
+
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    /*when the screen is less than 800px justify list item center and have more space around*/
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+
+    wrap the list item block
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+    text-align: center;
+  }
+  /*nav have border bottom when width get less than 600px*/
+  .navigation a {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  li.left {
+    margin-right: inherit;
 
   }
+
+  li.right {
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+}
+
+
+/*----------------------------------------------how-to-use---------------------------------------------------- */
+
+.how-to-use {
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;*/
+
+  padding: 80px;
+
+}
+
+
+.how-to-use-content {
+  flex-basis: 80%;
+  margin: 0 auto;
+
+}
