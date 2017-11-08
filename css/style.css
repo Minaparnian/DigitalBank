@@ -51,7 +51,7 @@ a {
 }
 
 .form-1 {
-  flex-basis: 70%;
+  flex-basis: 100%;
   /*flex-grow: 2;*/
   flex-shrink: 5;
 }
