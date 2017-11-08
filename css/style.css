@@ -160,10 +160,6 @@ input {
 
 .navigation {
   list-style: none;
-  /*margin: 0;*/
-  /*height: 80px;*/
-
-
   background: white;
 
 /*change list direction from block to inline*/
@@ -175,6 +171,7 @@ input {
 
   /*define the flex container's main and cross axes*/
   -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   /*Push all the list on the right*/
   justify-content: flex-start;
   background-attachment: fixed;
@@ -298,6 +295,43 @@ h1 {
   color: #e41a70
 }
 
+/*----------------------------------------------clients---------------------------------------------------- */
+
+.section-2 {
+  background-color: #f1f1f2;
+  margin: 0;
+  display: flex;
+
+}
+
+.table {
+  display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+  display: block;
+
+
+}
+
+ul#list {
+	
+	list-style: none;
+	padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 0;
+
+
+
+	}
+
+  ul#list li {
+  		display: inline;
+      padding: 10px;
+  	}
 
 
 
