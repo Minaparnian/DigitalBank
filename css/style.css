@@ -275,9 +275,10 @@ p {
 
 
 .how-to-use-content{
-  flex-basis: 50%;
-  margin-left: 80px;
+  flex-basis: 70%;
+  margin: 0 auto;
   padding-top: 30px;
+  text-align: center;
 
 
 
@@ -367,10 +368,10 @@ h1 {
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 650px) {
   .navigation {
 
-    wrap the list item block
+    /*wrap the list item block*/
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0;
