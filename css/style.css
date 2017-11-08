@@ -85,7 +85,7 @@ a {
   flex-basis:60%;
   /* Flex-grow is like to grow the width 1 or 2 times of the actual width */
   flex-grow: 1;
-  padding: 40px 60px;
+  padding: 20px 30px;
   margin-bottom: 90px;
 }
 .limit-text{
@@ -127,7 +127,7 @@ input {
 }
 .container .iframe-container {
       position: relative;
-      padding-top: 25px;
+      /*padding-top: 25px;*/
       display: flex;
       justify-content: space-around;
 }
@@ -199,7 +199,7 @@ li.left {
 }
 
 .navigation .right:hover {
-  background: #79217c;
+  background: #6276af;
   cursor: pointer;
 
 }
@@ -211,7 +211,56 @@ li.right {
 
 
 
-/*----------------------------------------------how-to-use---------------------------------------------------- */
+/*----------------------------------------------how-to-use-home-page---------------------------------------------------- */
+
+.how-to-use-home {
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;*/
+  padding: 80px;
+
+}
+
+
+.how-to-use-content-home {
+  flex-basis:70%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+
+
+
+}
+
+
+.section-home {
+  height: 100%;
+
+}
+
+p {
+  line-height:25px;
+}
+
+ .btn{
+
+  background-color: #e41a70;
+  border: 2px solid #e41a70;
+  color: white;
+  width: 130px;
+  margin: 0 auto;
+  height: 35px;
+  cursor: pointer;
+
+
+}
+
+
+
+/*----------------------------------------------how-to-use-use-page---------------------------------------------------- */
 
 .how-to-use {
 
@@ -225,7 +274,7 @@ li.right {
 }
 
 
-.how-to-use-content {
+.how-to-use-content{
   flex-basis: 50%;
   margin-left: 80px;
   padding-top: 30px;
@@ -235,7 +284,7 @@ li.right {
 }
 
 
-.section-2 {
+.section-use {
   height: 100%;
   background-color: white;
 }
@@ -247,6 +296,7 @@ p {
 h1 {
   color: #e41a70
 }
+
 
 
 
@@ -298,7 +348,7 @@ h1 {
       }
 
       .how-to-use-content {
-        flex-basis: 50%;
+        flex-basis: 70%;
 
         padding-top: 30px;
         margin: 0 auto;
