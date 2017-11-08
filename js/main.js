@@ -12,8 +12,16 @@ $(document).ready(function(){
 
     e.preventDefault();
     $("h1").addClass('animated slideInLeft');
-    $('.zoomIn').addClass('animated zoomIn')
+
   });
+
+  $(".button").click(function (e){
+  $('body').animate({scrollTop: $('.section-2').position().top}, 1500);
+    e.preventDefault();
+});
+
+
+
 
 
 
