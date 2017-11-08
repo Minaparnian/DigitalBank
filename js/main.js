@@ -18,11 +18,6 @@ $(document).ready(function(){
   $(".button").click(function (e){
   $('body').animate({scrollTop: $('.section-2').position().top}, 1500);
     e.preventDefault();
-});
-
-
-
-
-
+  });
 
 });
