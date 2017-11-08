@@ -290,6 +290,7 @@ li.right {
 .how-to-use-content {
   flex-basis: 50%;
   margin-left: 80px;
+  padding-top: 30px;
 
 
 }
@@ -301,9 +302,14 @@ li.right {
 }
 
 p {
-  line-height:30px;
+  line-height:25px;
 }
 
 h1 {
   color: #e41a70
+}
+.zoomIn {
+
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
 }

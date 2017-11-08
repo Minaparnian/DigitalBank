@@ -7,4 +7,14 @@ $(document).ready(function(){
       $(this).removeClass('animated bounce');
     });
   });
+
+  $( window ).scroll(function(e) {
+
+    e.preventDefault();
+    $("h1").addClass('animated slideInLeft');
+    $('.zoomIn').addClass('animated zoomIn')
+  });
+
+
+
 });
