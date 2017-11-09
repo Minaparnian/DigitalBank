@@ -4,7 +4,7 @@ const showNames = function (data) {
     console.log( p );
     const html = `<div class="offer">${ p.name } raised $${ p.raisedAmount }</div>`;
 
-    $('.section-3').append( html );
+    $('.offers-all').append( html );
   })
 };
 

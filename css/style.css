@@ -342,7 +342,7 @@ ul#list {
       display: inline-block;
     }
 
-   .deals-container {
+   .offers-container {
       width: 100%;
       max-width: 1200px;
       margin: 0px auto;
@@ -351,7 +351,7 @@ ul#list {
 
    }
 
-  .deals-container header {
+  .offers-container header {
 
     display: flex;
     -webkit-box-align: center;
@@ -374,7 +374,7 @@ ul#list {
     color: #3f3e3e;
   }
 
-  .deals-container section {
+  .offers-container section {
 
     display: -webkit-box;
     display: flex;
@@ -391,7 +391,7 @@ ul#list {
   }
 
 
-  .deals-container .buttonfilter {
+  .offers-container .buttonfilter {
     margin-bottom: 50px;
     -webkit-box-pack: center;
     justify-content: center;
@@ -399,7 +399,7 @@ ul#list {
 
   }
 
-  .deals-container button.buttonfilter {
+  .offers-container button.buttonfilter {
 
     margin: 10px;
     padding: 10px;
