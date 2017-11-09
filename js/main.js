@@ -1,27 +1,13 @@
 const showNames = function (data) {
-  // console.log( data );
-
 
   _(data.comingSoon).each(function (p) {
     console.log( p );
-    const html = `<p>${ p.name } raised $${ p.raisedAmount }</p>`;
+    const html = `<div class="offer">${ p.name } raised $${ p.raisedAmount }</div>`;
 
-    $('body').append( html );
+    $('.section-3').append( html );
   })
 };
 
-//
-// $.ajax("https://api.equitise.exchange/offer").done( function (data) {
-// console.log( data );
-//
-// for (let i = 0; i < data.comingSoon.length; i++) {
-//   let item = data.comingSoon[i].name;
-// }
-//
-// _(data.comingSoon.name).each(function (p) {
-//   console.log( p );
-// })
-// });
 
 const xinjaURL = "https://api.equitise.exchange/offer";
 

@@ -93,7 +93,7 @@ a {
   margin: 10px auto;
 }
 
-button {
+.btn {
 
   background-color: #e41a70;
   border: 2px solid #e41a70;
@@ -242,18 +242,7 @@ p {
   line-height:25px;
 }
 
- .btn{
 
-  background-color: #e41a70;
-  border: 2px solid #e41a70;
-  color: white;
-  width: 130px;
-  margin: 0 auto;
-  height: 35px;
-  cursor: pointer;
-
-
-}
 
 
 
@@ -295,6 +284,18 @@ h1 {
   color: #e41a70
 }
 
+.btn-btn {
+
+  background-color: #e41a70;
+  border: 2px solid #e41a70;
+  color: white;
+  width: 200px;
+  margin: 0 auto;
+  height: 35px;
+  cursor: pointer;
+
+}
+
 /*----------------------------------------------clients---------------------------------------------------- */
 
 .section-2 {
@@ -313,7 +314,7 @@ h1 {
 }
 
 ul#list {
-	
+
 	list-style: none;
 	padding-top: 20px;
   padding-bottom: 20px;
@@ -332,10 +333,95 @@ ul#list {
   		display: inline;
       padding: 10px;
   	}
+    /*-----------------------------------@offer---------------------------------------------------- */
+
+    .offer {
+      height: 200px;
+      width: 200px;
+      border: 1px solid black;
+      display: inline-block;
+    }
+
+   .deals-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0px auto;
+      padding-top: 80px;
+      padding-bottom: 80px
+
+   }
+
+  .deals-container header {
+
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+  }
+
+  .offer-section-title {
+    min-width: 150px;
+    display: inline-block;
+    margin: 0px 0px 35px;
+    padding: 0px 0px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'latolight';
+    font-size: 34px;
+    color: #3f3e3e;
+  }
+
+  .deals-container section {
+
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -10px 0 0 10px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    align-items: flex-start;
+
+  }
+
+
+  .deals-container .buttonfilter {
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+
+  }
+
+  .deals-container button.buttonfilter {
+
+    margin: 10px;
+    padding: 10px;
+    min-width: 140px;
+    font-size: 16px;
+    font-family: 'latolight';
+    background: none;
+    border: 1px solid #469edc;
+    color: #469edc;
+    border-radius: 2px;
+    transition: background 0.3s ease;
+    width: 200px;
+
+  }
 
 
 
-/*----------------------------------------------@media query---------------------------------------------------- */
+
+
+/*-----------------------------------@media query---------------------------------------------------- */
+
+
 
 @media all and (max-width: 950px) {
 
@@ -352,7 +438,7 @@ ul#list {
 
 
 
-      button {
+      .btn {
 
         background-color: #e41a70;
         border: 1px solid #e41a70;
