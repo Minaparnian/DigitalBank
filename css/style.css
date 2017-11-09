@@ -343,14 +343,33 @@ ul#list {
       margin: 20px;
       padding: 20px;
       box-sizing: border-box;
+      transition: 0.2s ease-in-out;
+
+
     }
 
-    .offer-dumy {
+    .offer:hover {
+      background-color: grey;
+      color: white;
+      cursor: pointer;
+      border: none;
+
+    }
+
+    .offer-dumy-live {
       height: 200px;
       width: 200px;
-      border: 1px solid black;
       margin: 20px;
+      background: url(../img/liveoffer.png) center center no-repeat;
 
+    }
+
+    .offer-dumy-coming {
+      height: 200px;
+      width: 200px;
+      margin: 20px;
+      background: url(../img/Comingsoon.png) center center no-repeat;
+      display: none;
     }
 
    .offers-container {
@@ -358,7 +377,7 @@ ul#list {
       max-width: 1200px;
       margin: 0px auto;
       padding-top: 80px;
-      padding-bottom: 80px
+      padding-bottom: 80px;
 
    }
 
@@ -380,7 +399,6 @@ ul#list {
     text-align: center;
     text-transform: uppercase;
     position: relative;
-    font-family: 'latolight';
     font-size: 34px;
     color: #3f3e3e;
   }
@@ -416,17 +434,36 @@ ul#list {
     padding: 10px;
     min-width: 140px;
     font-size: 16px;
-    font-family: 'latolight';
     background: none;
-    border: 1px solid #469edc;
-    color: #469edc;
+    border: 1px solid #e41a70;
+    color: #e41a70;
     border-radius: 2px;
-    transition: background 0.3s ease;
     width: 200px;
+    cursor: pointer;
 
   }
 
+  .offers-container button.buttonfilter-load  {
+    margin: 10px;
+    padding: 10px;
+    min-width: 140px;
+    font-size: 16px;
+    background: none;
+    border: 1px solid #e41a70;
+    color: #e41a70;
+    border-radius: 2px;
+    width: 30px;
+    cursor: pointer;
+  }
 
+  .offers-container button.buttonfilter:hover {
+    background-color: #e41a70;
+    color: white;
+  }
+
+.offers-all {
+  display: none;
+}
 
 
 
