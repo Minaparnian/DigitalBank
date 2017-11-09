@@ -15,5 +15,15 @@ $(document).ready(function(){
 
   });
 
+  $.ajax("https://api.equitise.exchange/offer").done( function (data) {
+  console.log( data );
+  for (let i = 0; i < data.comingSoon.length; i++) {
+    let item = data.comingSoon[i];
+
+}
+
+
+});
+
 
 });
