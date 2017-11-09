@@ -13,7 +13,8 @@ const showNames = function (data) {
 const xinjaURL = "https://api.equitise.exchange/offer";
 
 $.ajax(xinjaURL, {
-  format: 'json'
+  format: 'json',
+  
 }).done(showNames);
 
 
@@ -49,12 +50,15 @@ $(document).ready(function(){
     $('.offer-dumy-coming').show();
   });
 
-  $(".buttonfilter-load").on('click' function(e) {
+  $(".coming").on('click', function(e) {
     e.preventDefault;
-    if($(".coming").data('clicked') {
       $('.offers-all').show();
-    } else
-  })
+  });
+
+  $(".live").on('click', function(e) {
+    e.preventDefault;
+      $('.offers-all').hide();
+  });
 
 
 
