@@ -340,6 +340,17 @@ ul#list {
       width: 200px;
       border: 1px solid black;
       display: inline-block;
+      margin: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .offer-dumy {
+      height: 200px;
+      width: 200px;
+      border: 1px solid black;
+      margin: 20px;
+
     }
 
    .offers-container {
