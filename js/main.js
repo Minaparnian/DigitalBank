@@ -2,7 +2,8 @@ const showNames = function (data) {
 
   _(data.comingSoon).each(function (p) {
     console.log( p );
-    const html = `<div class="offer">${ p.name }<br/>raised :$${ p.raisedAmount }<br/>Private:${ p.private }</div>`;
+    const html = `<div class="offer"><div class="center"><h3>${ p.name }</h3><h5>raised :$${ p.raisedAmount }</h5><h5
+    >Private:${ p.private }</h5></div></div>`;
 
     $('.offers-all').append( html ).hide();
 
@@ -14,7 +15,7 @@ const xinjaURL = "https://api.equitise.exchange/offer";
 
 $.ajax(xinjaURL, {
   format: 'json',
-  
+
 }).done(showNames);
 
 

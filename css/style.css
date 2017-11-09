@@ -336,16 +336,24 @@ ul#list {
     /*-----------------------------------@offer---------------------------------------------------- */
 
     .offer {
-      height: 200px;
+      height: 220px;
       width: 200px;
-      border: 1px solid black;
       display: inline-block;
       margin: 20px;
-      padding: 20px;
+      /*padding: 20px;*/
       box-sizing: border-box;
       transition: 0.2s ease-in-out;
+      background-color: #f1f1f2;
+      color: grey;
+    }
 
-
+    .center {
+      margin: auto;
+      width: 80%;
+      height: 80%;
+      /*background-color: grey;*/
+      /*padding: 1px;*/
+      box-sizing: border-box;
     }
 
     .offer:hover {
