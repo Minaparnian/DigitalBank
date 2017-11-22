@@ -1,4 +1,5 @@
 # DigitalBank
+The code test - Sent by EQUITISE
 ## By Mina Parnian
 
 
