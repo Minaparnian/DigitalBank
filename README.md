@@ -1,10 +1,12 @@
 # DigitalBank
 ## By Mina Parnian
 
-## Online Version
+
+
+### Online Version
 An online version of the app can be accessed using this  [Link  :link:](https://minaparnian.github.io/DigitalBank/)
 
-## Build With
+### Build With
 
 - HTML5/ CSS3
 - Javascript/jQuery
