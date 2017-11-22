@@ -11,4 +11,4 @@ An online version of the app can be accessed using this  [Link  :link:](https://
 
 - HTML5/ CSS3
 - Javascript/jQuery
-- API
+- Equitise API
